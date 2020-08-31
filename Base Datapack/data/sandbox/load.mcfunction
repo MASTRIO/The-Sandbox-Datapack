@@ -1,0 +1,1 @@
+tellraw @a ["",{"text":"[Debug]:","bold":true,"color":"yellow"},{"text":" Base ","color":"green"},{"text":"Sandbox","italic":true,"color":"aqua"},{"text":" data installed","color":"green"}]
