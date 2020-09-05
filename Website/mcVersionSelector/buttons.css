@@ -10,7 +10,8 @@
 	text-decoration:none;
 }
 .mcVersionSelect:hover {
-	background-color:#404040;
+	background-color: yellow;
+	color: black;
 }
 .mcVersionSelect:active {
 	position:relative;
