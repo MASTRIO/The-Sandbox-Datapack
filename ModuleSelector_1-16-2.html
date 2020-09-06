@@ -53,41 +53,110 @@
         </div>
 
         <!--Main Body-->
-            <!--The Accordian Slider thingy-->
-            <div class="accordion moduleSelect1162">
-                    <input type="radio" name="select" class="accordion-select" checked />
-                <div class="accordion-title"><span>Asthetic</span></div>
-                <div class="accordion-content">Oof, It looks like there's nothing here yet :(</div> 
-                <!--Text Module-->
-                <div class="button">Test Module<div>v1.0</div></div>
-                    <input type="radio" name="select" class="accordion-select" />
-                <div class="accordion-title"><span>Crafting</span></div>
-                <div class="accordion-content">Oof, It looks like there's nothing here yet :(</div> 
-                    <input type="radio" name="select" class="accordion-select" />
-                <div class="accordion-title"><span>Items</span></div>
-                <div class="accordion-content">Oof, It looks like there's nothing here yet :(</div> 
-                    <input type="radio" name="select" class="accordion-select" />
-                <div class="accordion-title"><span>Mobs</span></div>
-                <div class="accordion-content">Oof, It looks like there's nothing here yet :(</div> 
-                    <input type="radio" name="select" class="accordion-select" />
-                <div class="accordion-title"><span>Utility</span></div>
-                <div class="accordion-content">Oof, It looks like there's nothing here yet :(</div> 
-                    <input type="radio" name="select" class="accordion-select" />
-                <div class="accordion-title"><span>Multiplayer</span></div>
-                <div class="accordion-content">Oof, It looks like there's nothing here yet :(</div> 
-                    <input type="radio" name="select" class="accordion-select" />
-                <div class="accordion-title"><span>World Gen</span></div>
-                <div class="accordion-content">Oof, It looks like there's nothing here yet :(</div> 
-                    <input type="radio" name="select" class="accordion-select" />
-                <div class="accordion-title"><span>Minigames</span></div>
-                <div class="accordion-content">Oof, It looks like there's nothing here yet :(</div> 
-                    <input type="radio" name="select" class="accordion-select" />
-                <div class="accordion-title"><span>Fun / Stupid</span></div>
-                <div class="accordion-content">Oof, It looks like there's nothing here yet :(</div> 
-                    <input type="radio" name="select" class="accordion-select" />
-                <div class="accordion-title"><span>Other</span></div>
-                <div class="accordion-content">Oof, It looks like there's nothing here yet :(</div> 
+        <br>
+        <br>
+        <br>
+        <!--Module Catagories-->
+        <h1 style="text-align: center; color: white;">Datapack Module Selector</h1>
+        <h4 style="text-align: center; color: white;">For 1.16.2</h4>
+        <br>
+        <!--Asthetic-->
+        <div class="container">
+            <button type="button" class="collapsible">Asthetic</button>
+            <div class="content">
+                <div class="button">Test Module<div>#000 - v1.0</div></div>
             </div>
+        </div>
+        <!--Crafting-->
+        <div class="container">
+            <button type="button" class="collapsible">Crafting</button>
+            <div class="content">
+                <!--Modules Go Here-->
+                
+            </div>
+        </div>
+        <!--Items-->
+        <div class="container">
+            <button type="button" class="collapsible">Items</button>
+            <div class="content">
+                <!--Modules Go Here-->
+                
+            </div>
+        </div>
+        <!--Mobs-->
+        <div class="container">
+            <button type="button" class="collapsible">Mobs</button>
+            <div class="content">
+                <!--Modules Go Here-->
+                
+            </div>
+        </div>
+        <!--Utility-->
+        <div class="container">
+            <button type="button" class="collapsible">Utility</button>
+            <div class="content">
+                <!--Modules Go Here-->
+                
+            </div>
+        </div>
+        <!--Multiplayer-->
+        <div class="container">
+            <button type="button" class="collapsible">Multiplayer</button>
+            <div class="content">
+                <!--Modules Go Here-->
+                
+            </div>
+        </div>
+        <!--World Gen-->
+        <div class="container">
+            <button type="button" class="collapsible">World Gen</button>
+            <div class="content">
+                <!--Modules Go Here-->
+                
+            </div>
+        </div>
+        <!--Challenging-->
+        <div class="container">
+            <button type="button" class="collapsible">Challenging</button>
+            <div class="content">
+                <!--Modules Go Here-->
+                
+            </div>
+        </div>
+        <!--Fun / Stupid-->
+        <div class="container">
+            <button type="button" class="collapsible">Fun / Stupid</button>
+            <div class="content">
+                <!--Modules Go Here-->
+                
+            </div>
+        </div>
+        <!--Other-->
+        <div class="container">
+            <button type="button" class="collapsible">Other</button>
+            <div class="content">
+                <!--Modules Go Here-->
+                
+            </div>
+        </div>
+
+        <!--Script for collapsables-->
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+        </script>
 
         <!--Bottom-->
         <br>
